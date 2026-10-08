@@ -17,6 +17,12 @@ git add .
 git status
 git commit -m"Add site pages and freeze"
 quarto publish gh-pages
+touch commands.txt
 git add commands.txt
 git commit -m "Add command log"
+git push origin main
+quarto render
+quarto publish gh-pages
+git add .
+git commit -m "Complete bonus tasks"
 git push origin main

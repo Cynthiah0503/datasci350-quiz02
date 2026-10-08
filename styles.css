@@ -1,1 +1,9 @@
 /* css styles */
+
+a {
+  color: rgb(214 122 127);
+}
+
+body {
+  font-family: "Gill Sans", sans-serif;
+}
