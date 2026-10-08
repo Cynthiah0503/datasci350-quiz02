@@ -4,14 +4,14 @@
     "href": "budget-revenue.html",
     "title": "Budget and Revenue",
     "section": "",
-    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue\n\n\n\n\n\nFigure 1 shows the relationship between movie budgets and revenues."
+    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues. Figure 1 shows the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue"
   },
   {
     "objectID": "budget-revenue.html#budget-vs.-revenue",
     "href": "budget-revenue.html#budget-vs.-revenue",
     "title": "Budget and Revenue",
     "section": "",
-    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue\n\n\n\n\n\nFigure 1 shows the relationship between movie budgets and revenues."
+    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues. Figure 1 shows the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue"
   },
   {
     "objectID": "index.html",
