@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue\n\n\n\n\n\nFigure 1 shows the relationship between movie budgets and revenues."
+  },
+  {
+    "objectID": "budget-revenue.html#budget-vs.-revenue",
+    "href": "budget-revenue.html#budget-vs.-revenue",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie budgets and revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Budget vs Revenue\n\n\n\n\n\nFigure 1 shows the relationship between movie budgets and revenues."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home page",
+    "section": "",
+    "text": "The dataset contains information about movies, including their title, year, franchise, budget, revenue, runtime and imdb rating. It provides a overview of various aspects of the film industry, allowing for choice of a movie easier and more informed."
+  },
+  {
+    "objectID": "index.html#about-the-dataset",
+    "href": "index.html#about-the-dataset",
+    "title": "Home page",
+    "section": "",
+    "text": "The dataset contains information about movies, including their title, year, franchise, budget, revenue, runtime and imdb rating. It provides a overview of various aspects of the film industry, allowing for choice of a movie easier and more informed."
+  },
+  {
+    "objectID": "index.html#links-to-analysis-pages",
+    "href": "index.html#links-to-analysis-pages",
+    "title": "Home page",
+    "section": "Links to Analysis Pages",
+    "text": "Links to Analysis Pages\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI use: I used chatgpt to check my answers"
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie runtimes and ratings.\nFigure 1 shows the relationship between movie runtimes and ratings.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"runtime_min\"], df[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDB Rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Runtime vs Ratings\n\n\n\n\n\n\ndf[\"decade\"] = df[\"year\"] // 10 * 10\ndf.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\n\n\nTable 1: Mean IMDB Rating by Decade\n\n\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "runtime-rating.html#runtime-vs.-ratings",
+    "href": "runtime-rating.html#runtime-vs.-ratings",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie runtimes and ratings.\nFigure 1 shows the relationship between movie runtimes and ratings.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"runtime_min\"], df[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDB Rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Movie Runtime vs Ratings\n\n\n\n\n\n\ndf[\"decade\"] = df[\"year\"] // 10 * 10\ndf.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\n\n\nTable 1: Mean IMDB Rating by Decade\n\n\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "Revenue and Time",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie revenue and time.\nFigure 1 shows the relationship between revenue and time.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\n\nbond = df[df[\"franchise\"] == \"James Bond\"]\n\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Revenue over Time\n\n\n\n\n\nthe first Bond year is 1995 and last Bond year is 2021."
+  },
+  {
+    "objectID": "bond.html#revenue-vs.-time",
+    "href": "bond.html#revenue-vs.-time",
+    "title": "Revenue and Time",
+    "section": "",
+    "text": "this is a short introduction to the analysis of the relationship between movie revenue and time.\nFigure 1 shows the relationship between revenue and time.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\n\nbond = df[df[\"franchise\"] == \"James Bond\"]\n\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Revenue over Time\n\n\n\n\n\nthe first Bond year is 1995 and last Bond year is 2021."
+  }
+]
