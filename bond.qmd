@@ -1,0 +1,38 @@
+---
+title: "Revenue and Time"
+---
+
+## Revenue vs. Time
+
+this is a short introduction to the analysis of the relationship between movie revenue and time. 
+
+
+
+@fig-bond shows the relationship between revenue and time.
+
+
+
+```{python}
+#| label: fig-bond
+#| fig-cap: "Revenue over Time"
+#| echo: true
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("films.csv")
+
+
+bond = df[df["franchise"] == "James Bond"]
+
+
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Revenue (million USD)")
+plt.show()
+```
+
+
+
+
+the first Bond year is `{python} int(bond["year"].min())` and last Bond year is `{python} int(bond["year"].max())`.
+

@@ -1,0 +1,16 @@
+---
+title: "Home page"
+---
+## About the dataset
+
+The dataset contains information about movies, including their title, year, franchise, budget, revenue, runtime and imdb rating. It provides a overview of various aspects of the film industry, allowing for choice of a movie easier and more informed. 
+
+
+## Links to Analysis Pages
+
+- [Budget and Revenue](budget-revenue.qmd) 
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+
+AI use: I used chatgpt to check my answers

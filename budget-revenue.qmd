@@ -1,0 +1,25 @@
+---
+title: "Budget and Revenue"
+---
+
+## Budget vs. Revenue
+
+this is a short introduction to the analysis of the relationship between movie budgets and revenues. 
+
+```{python}
+#| label: fig-budget-revenue
+#| fig-cap: "Movie Budget vs Revenue"
+#| echo: true
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("films.csv")
+
+plt.scatter(df["budget_musd"], df["revenue_musd"])
+plt.xlabel("Budget (million USD)")
+plt.ylabel("Revenue (million USD)")
+plt.show()
+```
+
+@fig-budget-revenue shows the relationship between movie budgets and revenues.
