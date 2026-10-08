@@ -26,3 +26,8 @@ quarto publish gh-pages
 git add .
 git commit -m "Complete bonus tasks"
 git push origin main
+quarto render
+quarto publish gh-pages
+git add .
+git commit -m "Fix figure reference"
+git push origin main

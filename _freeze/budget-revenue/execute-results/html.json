@@ -1,10 +1,10 @@
 {
-  "hash": "2164ff289600fb88b04dde498285d2c4",
+  "hash": "aae8269b59488177be35334d6243ea57",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\n## Budget vs. Revenue\n\nthis is a short introduction to the analysis of the relationship between movie budgets and revenues. \n\n::: {#cell-fig-budget-revenue .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Movie Budget vs Revenue](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=431}\n:::\n:::\n\n\n@fig-budget-revenue shows the relationship between movie budgets and revenues.\n\n",
+    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\n## Budget vs. Revenue\n\nthis is a short introduction to the analysis of the relationship between movie budgets and revenues. @fig-budget-revenue shows the relationship between movie budgets and revenues.\n\n::: {#cell-fig-budget-revenue .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"films.csv\")\n\nplt.scatter(df[\"budget_musd\"], df[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Movie Budget vs Revenue](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=431}\n:::\n:::\n\n\n",
     "supporting": [
-      "budget-revenue_files"
+      "budget-revenue_files/figure-html"
     ],
     "filters": [],
     "includes": {}
